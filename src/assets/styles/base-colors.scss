@@ -1,0 +1,105 @@
+@import '~@angular/material/theming';
+
+$base-primary: #B5838D;
+$base-accent: #6D6875;
+$base-accent2: #F5C9CC;
+$base-warn: #E5989B;
+
+$my-primary: (
+  50: lighten($base-primary, 50%),
+  100: lighten($base-primary, 40%),
+  200: lighten($base-primary, 30%),
+  300: lighten($base-primary, 20%),
+  400: lighten($base-primary, 10%),
+  500: $base-primary,
+  600: darken($base-primary, 10%),
+  700: darken($base-primary, 20%),
+  800: darken($base-primary, 30%),
+  900: darken($base-primary, 40%),
+  A100: darken($base-primary, 50%),
+  A200: darken($base-primary, 60%),
+  A400: darken($base-primary, 70%),
+  A700: darken($base-primary, 80%),
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$my-accent: (
+  50: lighten($base-accent, 50%),
+  100: lighten($base-accent, 40%),
+  200: lighten($base-accent, 30%),
+  300: lighten($base-accent, 20%),
+  400: lighten($base-accent, 10%),
+  500: $base-accent,
+  600: darken($base-accent, 10%),
+  700: darken($base-accent, 20%),
+  800: darken($base-accent, 30%),
+  900: darken($base-accent, 40%),
+  A100: darken($base-accent, 50%),
+  A200: darken($base-accent, 60%),
+  A400: darken($base-accent, 70%),
+  A700: darken($base-accent, 80%),
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$my-warn: (
+  50: lighten($base-warn, 50%),
+  100: lighten($base-warn, 40%),
+  200: lighten($base-warn, 30%),
+  300: lighten($base-warn, 20%),
+  400: lighten($base-warn, 10%),
+  500: $base-warn,
+  600: darken($base-warn, 10%),
+  700: darken($base-warn, 20%),
+  800: darken($base-warn, 30%),
+  900: darken($base-warn, 40%),
+  A100: darken($base-warn, 50%),
+  A200: darken($base-warn, 60%),
+  A400: darken($base-warn, 70%),
+  A700: darken($base-warn, 80%),
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
