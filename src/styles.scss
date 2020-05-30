@@ -1,0 +1,25 @@
+@import '~@angular/material/theming', './assets/styles/base-colors.scss';
+
+@include mat-core();
+
+// I love Mike
+
+// My Primary Color
+
+$stitch-study-app-primary: mat-palette($my-primary);
+$stitch-study-app-accent:  mat-palette($my-accent);
+$stitch-study-app-warn:    mat-palette($my-warn);
+
+$stitch-study-app-theme: mat-light-theme($stitch-study-app-primary, $stitch-study-app-accent, $stitch-study-app-warn);
+
+@include angular-material-theme($stitch-study-app-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,244,247,1) 100%);
+}
