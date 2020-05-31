@@ -1,4 +1,4 @@
 <app-searchbar></app-searchbar>
-<app-card-item></app-card-item>
-<button (click)="clear(); showConfig()">get</button>
-<p>Textfile URL is "{{items}}"</p>
+<app-card-item [listBooks]="books"></app-card-item>
+<button (click)="showConfig()">get</button>
+

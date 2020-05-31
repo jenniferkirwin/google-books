@@ -11,20 +11,15 @@ import { ConfigService } from '../../config/config.service';
 export class SearchPageComponent implements OnInit {
 
   error: any;
-  books: any;
+  public books: any;
 
   constructor(private configService: ConfigService) { }
-
-  clear() {
-    this.books = undefined;
-    this.error = undefined;
-  }
 
   showConfig() {
     this.configService.getConfig()
       .subscribe(
         ({ items }: any) => {
-          this.books = { items };
+          this.books = [...items];
           console.log(items);
         },
         error => this.error = error
