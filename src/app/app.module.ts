@@ -9,6 +9,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 
+// Firestore DB
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+
 // Materialize Components
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
@@ -38,6 +43,9 @@ import { CardItemComponent } from './components/card-item/card-item.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    // Start Firestore Modules for DB
+    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     // Start Materialize Components
     MatMenuModule,
     MatButtonModule,
